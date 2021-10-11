@@ -177,11 +177,11 @@ This is the most complex refactoring, but it gives big gains in code quality:
 
 The `get_price` method has a block like this:
 ```python
-if self.size == Pizza.SMALL:
+if self.size == SMALL:
     price = ...
-elif self.size == Pizza.MEDIUM:
+elif self.size == MEDIUM:
     price = ...
-elif self.size == Pizza.LARGE:
+elif self.size == LARGE:
     price = ...
 ```
 The pizza has to know the pricing rule for each size, which makes the code complex.
